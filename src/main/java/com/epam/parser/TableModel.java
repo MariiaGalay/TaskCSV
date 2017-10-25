@@ -1,125 +1,85 @@
 package com.epam.parser;
 
 public class TableModel {
-    public String time;
-    private String two;
-    private String three;
-    private String four;
-    public String five;
-    private String six;
-    private String seven;
-    private String eight;
-    private String nine;
-    private String ten;
+    public String firstColumn;
+    private String secondColumn;
+    private String thirdColumn;
+    private String fourthColumn;
+    public String fifthColumn;
+    private String sixthColumn;
+    private String seventhColumn;
+    private String eighthColumn;
+    private String ninthColumn;
+    private String tenthColumn;
 
-    public String getTime() {
-        return time;
+    public String getFirstColumn() {
+        return firstColumn;
     }
 
-    public void setTime(String time) {
-        this.time = time;
+    public String getSecondColumn() {
+        return secondColumn;
     }
 
-    public String getTwo() {
-        return two;
+    public String getThirdColumn() {
+        return thirdColumn;
     }
 
-    public void setTwo(String two) {
-        this.two = two;
+    public String getFourthColumn() {
+        return fourthColumn;
     }
 
-    public String getThree() {
-        return three;
+    public String getFifthColumn() {
+        return fifthColumn;
     }
 
-    public void setThree(String three) {
-        this.three = three;
+    public String getSixthColumn() {
+        return sixthColumn;
     }
 
-    public String getFour() {
-        return four;
+    public String getSeventhColumn() {
+        return seventhColumn;
     }
 
-    public void setFour(String four) {
-        this.four = four;
+    public String getEighthColumn() {
+        return eighthColumn;
     }
 
-    public String getFive() {
-        return five;
+    public String getNinthColumn() {
+        return ninthColumn;
     }
 
-    public void setFive(String five) {
-        this.five = five;
+    public String getTenthColumn() {
+        return tenthColumn;
     }
 
-    public String getSix() {
-        return six;
-    }
-
-    public void setSix(String six) {
-        this.six = six;
-    }
-
-    public String getSeven() {
-        return seven;
-    }
-
-    public void setSeven(String seven) {
-        this.seven = seven;
-    }
-
-    public String getEight() {
-        return eight;
-    }
-
-    public void setEight(String eight) {
-        this.eight = eight;
-    }
-
-    public String getNine() {
-        return nine;
-    }
-
-    public void setNine(String nine) {
-        this.nine = nine;
-    }
-
-    public String getTen() {
-        return ten;
-    }
-
-    public void setTen(String ten) {
-        this.ten = ten;
-    }
-
-    public TableModel(String time, String two, String three, String four, String five, String six, String seven,
-                      String eight, String nine, String ten) {
-        this.time = time;
-        this.two = two;
-        this.three = three;
-        this.four = four;
-        this.five = five;
-        this.six = six;
-        this.seven = seven;
-        this.eight = eight;
-        this.nine = nine;
-        this.ten = ten;
+    public TableModel(String firstColumn, String secondColumn, String thirdColumn, String fourthColumn, String fifthColumn,
+                      String sixthColumn, String seven, String eight, String ninthColumn, String tenthColumn) {
+        this.firstColumn = firstColumn;
+        this.secondColumn = secondColumn;
+        this.thirdColumn = thirdColumn;
+        this.fourthColumn = fourthColumn;
+        this.fifthColumn = fifthColumn;
+        this.sixthColumn = sixthColumn;
+        this.seventhColumn = seven;
+        this.eighthColumn = eight;
+        this.ninthColumn = ninthColumn;
+        this.tenthColumn = tenthColumn;
     }
 
 
     @Override
     public String toString() {
-        return "{"+
-                time + '\'' +
-                two + '\'' +
-                three + '\'' +
-                four + '\'' +
-                five + '\'' +
-                six + '\'' +
-                seven + '\'' +
-                eight + '\'' +
-                nine + '\'' +
-                ten + '\'' +
+        return "{" +
+                firstColumn + '\'' +
+                secondColumn + '\'' +
+                thirdColumn + '\'' +
+                fourthColumn + '\'' +
+                fifthColumn + '\'' +
+                sixthColumn + '\'' +
+                seventhColumn + '\'' +
+                eighthColumn + '\'' +
+                ninthColumn + '\'' +
+                tenthColumn + '\'' +
                 "}\n";
     }
 }

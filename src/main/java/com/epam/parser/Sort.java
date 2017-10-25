@@ -6,7 +6,8 @@ import java.util.Comparator;
 import java.util.List;
 
 public class Sort {
-    public void sort(List<TableModel> data) throws IOException {
-        Collections.sort(data, Comparator.comparing(TableModel::getFive));
-         }
+    public static void sort(List<TableModel> data) throws IOException {
+        Collections.sort(data, Comparator.comparing(TableModel::getFifthColumn));
+
+    }
 }

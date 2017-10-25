@@ -1,25 +1,27 @@
 package com.epam.parser;
 
 import com.opencsv.CSVReader;
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVPrinter;
 
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.Writer;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class CSVParser {
-    private static final String COMMA_DELIMITER = ",";
-
     private static final String NEW_LINE_SEPARATOR = "\n";
-
-    //private static final String FILE_HEADER = "id,firstName,lastName,gender,age";
-
+    private static final String PATH_TIME_FILE = "src/main/resources/firstColumn.csv";
+    private static final String PATH_SORT_FILE = "src/main/resources/sort.csv";
+    private static final String PATH_SUM_FILE = "src/main/resources/sum.csv";
 
     public static List<TableModel> parseCSV() throws IOException {
-
         CSVReader reader = null;
-        reader = new CSVReader(new FileReader("src/main/resources/time.csv"), ',');
+        reader = new CSVReader(new FileReader(PATH_TIME_FILE), ',');
         List<TableModel> data = new ArrayList<>();
         String[] nextLine;
         reader.readNext();
@@ -31,45 +33,61 @@ public class CSVParser {
         return data;
     }
 
-
-    public static void writeToCsv(List<TableModel> data) {
+    public static void writeListCSV(List<TableModel> data) {
         FileWriter fileWriter = null;
-        try {
-            fileWriter = new FileWriter("src/main/resources/sort.csv");
-            for (TableModel tableModel : data) {
-                fileWriter.append(tableModel.getTime());
-                fileWriter.append(COMMA_DELIMITER);
-                fileWriter.append(tableModel.getTwo());
-                fileWriter.append(COMMA_DELIMITER);
-                fileWriter.append(tableModel.getThree());
-                fileWriter.append(COMMA_DELIMITER);
-                fileWriter.append(tableModel.getFour());
-                fileWriter.append(COMMA_DELIMITER);
-                fileWriter.append(tableModel.getFive());
-                fileWriter.append(COMMA_DELIMITER);
-                fileWriter.append(tableModel.getSix());
-                fileWriter.append(COMMA_DELIMITER);
-                fileWriter.append(tableModel.getSeven());
-                fileWriter.append(COMMA_DELIMITER);
-                fileWriter.append(tableModel.getEight());
-                fileWriter.append(COMMA_DELIMITER);
-                fileWriter.append(tableModel.getTen());
-                fileWriter.append(NEW_LINE_SEPARATOR);
+        CSVPrinter csvFilePrinter = null;
+        CSVFormat csvFileFormat = CSVFormat.DEFAULT.withRecordSeparator(NEW_LINE_SEPARATOR);
 
-                System.out.println("Ye");
+        try {
+            fileWriter = new FileWriter(PATH_SORT_FILE);
+            csvFilePrinter = new CSVPrinter(fileWriter, csvFileFormat);
+            for (TableModel tableModel : data) {
+                List timeDataRecord = new ArrayList();
+                timeDataRecord.add(tableModel.getFirstColumn());
+                timeDataRecord.add(tableModel.getSecondColumn());
+                timeDataRecord.add(tableModel.getThirdColumn());
+                timeDataRecord.add(tableModel.getFourthColumn());
+                timeDataRecord.add(tableModel.getFifthColumn());
+                timeDataRecord.add(tableModel.getSixthColumn());
+                timeDataRecord.add(tableModel.getSeventhColumn());
+                timeDataRecord.add(tableModel.getEighthColumn());
+                timeDataRecord.add(tableModel.getNinthColumn());
+                timeDataRecord.add(tableModel.getTenthColumn());
+
+                csvFilePrinter.printRecord(timeDataRecord);
             }
+
+            System.out.println("CSV file was created successfully !!!");
+
         } catch (Exception e) {
             System.out.println("Error in CsvFileWriter !!!");
             e.printStackTrace();
         } finally {
-
             try {
                 fileWriter.flush();
                 fileWriter.close();
+                csvFilePrinter.close();
             } catch (IOException e) {
-                System.out.println("Error while flushing/closing fileWriter !!!");
+                System.out.println("Error while flushing/closing fileWriter/csvPrinter !!!");
                 e.printStackTrace();
             }
         }
     }
+
+    public static void writeMaptoCsv(HashMap<String, Integer> map) {
+        try (Writer writer = new FileWriter(PATH_SUM_FILE)) {
+            for (Map.Entry<String, Integer> entry : map.entrySet()) {
+                writer.append(entry.getKey())
+                        .append(',')
+                        .append(entry.getValue().toString())
+                        .append(NEW_LINE_SEPARATOR);
+            }
+        } catch (IOException ex) {
+            ex.printStackTrace(System.err);
+        }
+    }
 }
+
+
+
+
