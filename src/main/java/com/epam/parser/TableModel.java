@@ -1,11 +1,11 @@
 package com.epam.parser;
 
 public class TableModel {
-    public String firstColumn;
-    private String secondColumn;
+    private String firstColumn;
+    private Integer secondColumn;
     private String thirdColumn;
     private String fourthColumn;
-    public String fifthColumn;
+    private String fifthColumn;
     private String sixthColumn;
     private String seventhColumn;
     private String eighthColumn;
@@ -16,7 +16,7 @@ public class TableModel {
         return firstColumn;
     }
 
-    public String getSecondColumn() {
+    public Integer getSecondColumn() {
         return secondColumn;
     }
 
@@ -52,7 +52,8 @@ public class TableModel {
         return tenthColumn;
     }
 
-    public TableModel(String firstColumn, String secondColumn, String thirdColumn, String fourthColumn, String fifthColumn,
+
+    public TableModel(String firstColumn, Integer secondColumn, String thirdColumn, String fourthColumn, String fifthColumn,
                       String sixthColumn, String seven, String eight, String ninthColumn, String tenthColumn) {
         this.firstColumn = firstColumn;
         this.secondColumn = secondColumn;
@@ -69,7 +70,7 @@ public class TableModel {
 
     @Override
     public String toString() {
-        return "{" +
+        return
                 firstColumn + '\'' +
                 secondColumn + '\'' +
                 thirdColumn + '\'' +
@@ -80,6 +81,6 @@ public class TableModel {
                 eighthColumn + '\'' +
                 ninthColumn + '\'' +
                 tenthColumn + '\'' +
-                "}\n";
+                "\n";
     }
 }

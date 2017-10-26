@@ -1,18 +1,17 @@
 package com.epam.parser;
 
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        List<TableModel> data = CSVParser.parseCSV();
-        Sort.sort(data);
-        CSVParser.writeListCSV(data);
+        List<TableModel> table = CSVParser.parseCSV();
+        Sort.sort(table);
+        CSVParser.writeListCSV(table);
 
-        HashMap<String, Integer> sumMap = SumOfColumn.sum(data);
-        CSVParser.writeMaptoCsv(sumMap);
-        CSVParser.writeListCSV(data);
+        Map<String, Integer> map = SumOfColumn.sum(table);
+        CSVParser.writeMaptoCsv(map);
 
     }
 }

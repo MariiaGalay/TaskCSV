@@ -1,24 +1,17 @@
 package com.epam.parser;
 
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 public class SumOfColumn {
-    public static HashMap<String, Integer> sum(List<TableModel> data) throws IOException {
-        HashMap<String, Integer> mapTime = new HashMap<>();
+    public static Map<String, Integer> sum(List<TableModel> data) throws IOException {
 
-
-        for (int i = 0; i < data.size(); i++) {
-            if (mapTime.containsKey(data.get(i).getFifthColumn())) {
-                mapTime.put(
-                        data.get(i).getFifthColumn(),
-                        (mapTime.get(data.get(i).getFifthColumn()) + Integer.valueOf(data.get(i).getEighthColumn())));
-            } else {
-                mapTime.put(data.get(i).getFifthColumn(), Integer.valueOf(data.get(i).getEighthColumn()));
-            }
-        }
-        return mapTime;
+        Map<String, Integer> result1 = data.stream().collect(
+                Collectors.toMap(TableModel::getFirstColumn, TableModel::getSecondColumn,
+                        (oldValue, newValue) -> oldValue + newValue));
+        return result1;
     }
 }
 

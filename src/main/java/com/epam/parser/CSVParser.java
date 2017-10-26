@@ -3,11 +3,9 @@ package com.epam.parser;
 import com.opencsv.CSVReader;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVPrinter;
+import org.apache.log4j.Logger;
 
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.Writer;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -15,23 +13,25 @@ import java.util.Map;
 
 public class CSVParser {
     private static final String NEW_LINE_SEPARATOR = "\n";
-    private static final String PATH_TIME_FILE = "src/main/resources/firstColumn.csv";
+    private static final String PATH_TIME_FILE = "src/main/resources/time.csv";
     private static final String PATH_SORT_FILE = "src/main/resources/sort.csv";
     private static final String PATH_SUM_FILE = "src/main/resources/sum.csv";
+    private static final Logger LOG = Logger.getLogger(CSVParser.class);
 
     public static List<TableModel> parseCSV() throws IOException {
-        CSVReader reader = null;
+        CSVReader reader;
         reader = new CSVReader(new FileReader(PATH_TIME_FILE), ',');
         List<TableModel> data = new ArrayList<>();
         String[] nextLine;
         reader.readNext();
         while ((nextLine = reader.readNext()) != null) {
-
-            data.add(new TableModel(nextLine[0], nextLine[1], nextLine[2], nextLine[3], nextLine[4], nextLine[5], nextLine[6],
-                    nextLine[7], nextLine[8], nextLine[9]));
+            data.add(new TableModel(nextLine[0].substring(0, 9), Integer.valueOf(nextLine[1]), nextLine[2], nextLine[3],
+                    nextLine[4], nextLine[5], nextLine[6], nextLine[7], nextLine[8], nextLine[9]));
         }
+        LOG.info("Parsed CSV to List<TableModel>");
         return data;
     }
+
 
     public static void writeListCSV(List<TableModel> data) {
         FileWriter fileWriter = null;
@@ -57,10 +57,10 @@ public class CSVParser {
                 csvFilePrinter.printRecord(timeDataRecord);
             }
 
-            System.out.println("CSV file was created successfully !!!");
+            LOG.info("CSV file was created successfully !!!");
 
         } catch (Exception e) {
-            System.out.println("Error in CsvFileWriter !!!");
+            LOG.error("Error in CsvFileWriter !!!" + e);
             e.printStackTrace();
         } finally {
             try {
@@ -68,13 +68,13 @@ public class CSVParser {
                 fileWriter.close();
                 csvFilePrinter.close();
             } catch (IOException e) {
-                System.out.println("Error while flushing/closing fileWriter/csvPrinter !!!");
+                LOG.error("Error while flushing/closing fileWriter/csvPrinter !!!" + e);
                 e.printStackTrace();
             }
         }
     }
 
-    public static void writeMaptoCsv(HashMap<String, Integer> map) {
+    public static void writeMaptoCsv(Map<String, Integer> map) {
         try (Writer writer = new FileWriter(PATH_SUM_FILE)) {
             for (Map.Entry<String, Integer> entry : map.entrySet()) {
                 writer.append(entry.getKey())
@@ -82,8 +82,10 @@ public class CSVParser {
                         .append(entry.getValue().toString())
                         .append(NEW_LINE_SEPARATOR);
             }
-        } catch (IOException ex) {
-            ex.printStackTrace(System.err);
+            LOG.info("wrote map toCSV succes");
+        } catch (IOException e) {
+            LOG.info("wrote map toCSV fail" + e);
+
         }
     }
 }
