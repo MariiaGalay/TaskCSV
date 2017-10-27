@@ -66,3 +66,122 @@
 2017-10-26 21:07:46,870 INFO  - Parsed CSV to List<TableModel>
 2017-10-26 21:07:49,516 INFO  - CSV file was created successfully !!!
 2017-10-26 21:07:49,638 INFO  - wrote map toCSV succes
+2017-10-26 23:11:10,264 INFO  - Parsed CSV to List<TableModel>
+2017-10-26 23:11:12,076 INFO  - CSV file was created successfully !!!
+2017-10-26 23:11:12,182 INFO  - wrote map toCSV succes
+2017-10-26 23:12:42,412 INFO  - Parsed CSV to List<TableModel>
+2017-10-26 23:12:44,554 INFO  - CSV file was created successfully !!!
+2017-10-26 23:12:44,641 INFO  - wrote map toCSV succes
+2017-10-27 15:11:03,791 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 15:26:51,934 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 15:32:12,534 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 15:41:02,965 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 15:41:47,006 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 15:49:14,072 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 15:55:23,567 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 15:56:06,546 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 15:57:03,708 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 15:57:12,744 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 15:59:22,289 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 15:59:45,802 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 16:01:07,310 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 16:01:09,772 INFO  - CSV file was created successfully !!!
+2017-10-27 16:04:23,972 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 16:04:26,980 INFO  - CSV file was created successfully !!!
+2017-10-27 16:10:13,808 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 16:10:17,106 INFO  - CSV file was created successfully !!!
+2017-10-27 16:13:54,160 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 16:13:56,440 INFO  - CSV file was created successfully !!!
+2017-10-27 16:17:58,263 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 16:18:00,981 INFO  - CSV file was created successfully !!!
+2017-10-27 16:22:11,578 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 16:22:15,759 INFO  - CSV file was created successfully !!!
+2017-10-27 16:25:37,577 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 16:25:40,343 INFO  - CSV file was created successfully !!!
+2017-10-27 16:32:23,880 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 16:32:25,965 INFO  - CSV file was created successfully !!!
+2017-10-27 16:42:31,487 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 16:42:34,313 INFO  - CSV file was created successfully !!!
+2017-10-27 16:53:09,351 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 16:53:11,466 INFO  - CSV file was created successfully !!!
+2017-10-27 16:57:36,775 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 16:57:38,324 INFO  - CSV file was created successfully !!!
+2017-10-27 16:59:10,517 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 16:59:12,640 INFO  - CSV file was created successfully !!!
+2017-10-27 17:01:09,504 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 17:01:11,825 INFO  - CSV file was created successfully !!!
+2017-10-27 17:13:14,567 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 17:13:19,624 INFO  - CSV file was created successfully !!!
+2017-10-27 17:42:32,527 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 17:42:35,153 INFO  - CSV file was created successfully !!!
+2017-10-27 17:46:21,895 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 17:50:44,506 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 17:53:05,252 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 17:57:06,711 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 18:02:40,669 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 18:02:45,156 INFO  - CSV file was created successfully !!!
+2017-10-27 18:04:56,528 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 18:05:00,739 INFO  - CSV file was created successfully !!!
+2017-10-27 18:08:48,603 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 18:08:52,724 INFO  - CSV file was created successfully !!!
+2017-10-27 18:10:17,215 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 18:10:20,500 INFO  - CSV file was created successfully !!!
+2017-10-27 18:10:45,718 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 18:10:49,415 INFO  - CSV file was created successfully !!!
+2017-10-27 18:14:35,180 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 18:14:39,380 INFO  - CSV file was created successfully !!!
+2017-10-27 18:43:45,054 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 18:44:46,725 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 18:45:18,613 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 18:49:40,953 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 18:50:44,777 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 18:51:50,677 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 18:51:52,971 INFO  - CSV file was created successfully !!!
+2017-10-27 18:59:25,992 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 19:04:47,882 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 19:05:59,066 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 19:25:45,463 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 19:26:18,723 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 19:27:32,709 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 19:28:17,592 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 19:29:43,755 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 20:23:29,176 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 20:28:39,346 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 20:29:45,017 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 20:32:54,369 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 21:23:27,802 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 21:25:29,486 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 21:26:23,381 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 21:27:09,020 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 21:35:35,010 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 21:40:24,113 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 21:58:26,363 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 22:04:19,215 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 22:04:49,189 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 22:07:30,391 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 22:12:06,468 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 22:19:29,945 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 22:19:56,800 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 22:29:05,001 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 22:42:21,304 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 22:42:51,485 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 22:56:51,288 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 22:57:46,654 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 22:58:45,750 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 23:10:49,113 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 23:11:21,041 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 23:13:35,092 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 23:14:45,812 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 23:15:19,302 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 23:15:55,137 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 23:35:10,387 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 23:35:49,376 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 23:36:16,044 INFO  - Parsed CSV to List<TableModel>
+2017-10-27 23:37:04,997 INFO  - Parsed CSV to List<TableModel>
+2017-10-28 00:10:38,710 INFO  - Parsed CSV to List<TableModel>
+2017-10-28 00:14:05,361 INFO  - Parsed CSV to List<TableModel>
+2017-10-28 00:18:10,599 INFO  - Parsed CSV to List<TableModel>
+2017-10-28 00:39:27,685 INFO  - Parsed CSV to List<TableModel>
+2017-10-28 00:43:35,744 INFO  - Parsed CSV to List<TableModel>
+2017-10-28 00:47:42,666 INFO  - Parsed CSV to List<TableModel>
+2017-10-28 00:47:46,219 INFO  - Created a file of sum
